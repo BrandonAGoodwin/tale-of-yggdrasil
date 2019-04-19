@@ -62,7 +62,7 @@ public class AcidBug extends Enemy {
 		// Load sprites
 		try{
 			
-			BufferedImage spritesheet = ImageIO.read(getClass().getResourceAsStream("/Sprites/Enemies/AcidBug.gif"));
+			BufferedImage spritesheet = ImageIO.read(getClass().getResourceAsStream("/Resources/Sprites/Enemies/AcidBug.gif"));
 			
 			sprites = new BufferedImage[4];
 			for(int i = 0; i < sprites.length; i++){

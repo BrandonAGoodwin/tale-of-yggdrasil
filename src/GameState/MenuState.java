@@ -37,8 +37,8 @@ public class MenuState extends GameState{
 		try{
 			
 			
-			bg = new Background("/Backgrounds/Grass&Sky.gif", 0.5);
-			helpScreen = ImageIO.read(getClass().getResourceAsStream("/Backgrounds/HelpScreen.gif"));
+			bg = new Background("/Resources/Backgrounds/Grass&Sky.gif", 0.5);
+			helpScreen = ImageIO.read(getClass().getResourceAsStream("/Resources/Backgrounds/HelpScreen.gif"));
 			
 			// Move speed of the background
 			bg.setVector(-0.5, 0);
@@ -49,8 +49,8 @@ public class MenuState extends GameState{
 			font = new Font ("Arial", Font.PLAIN, 12);
 			
 			// Background music + menu sound effects 
-			AudioPlayer.load("/SFX/beep.mp3", "beep");
-			AudioPlayer.load("/Music/Moonlit Secrets Looping.mp3", "bgMusic");
+			AudioPlayer.load("/Resources/SFX/beep.mp3", "beep");
+			AudioPlayer.load("/Resources/Music/Moonlit Secrets Looping.mp3", "bgMusic");
 			AudioPlayer.loop("bgMusic", AudioPlayer.getFrames("bgMusic"));
 		}
 		catch(Exception e){

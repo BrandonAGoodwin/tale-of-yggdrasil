@@ -28,7 +28,7 @@ public class HealthShrine extends MapObject {
 			
 			BufferedImage spritesheet = ImageIO.read(
 				getClass().getResourceAsStream(
-					"/Sprites/Misc/HealthShrineSprites.gif"
+					"Resources/Sprites/Misc/HealthShrineSprites.gif"
 				)
 			);
 				
@@ -42,7 +42,7 @@ public class HealthShrine extends MapObject {
 			e.printStackTrace();
 		}
 		
-		AudioPlayer.load("/SFX/HealthShrine.mp3", "HealthShrine");
+		AudioPlayer.load("/Resources/SFX/HealthShrine.mp3", "HealthShrine");
 		
 		animation = new Animation();
 		animation.setFrames(sprites);

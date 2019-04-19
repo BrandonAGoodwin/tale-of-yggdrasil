@@ -75,10 +75,10 @@ public class Level1AState extends GameState {
 
 		// Loads in the tile set, map, background, player, HUD, audio samples and map objects
 		tileMap = new TileMap(32);
-		tileMap.loadTiles("/Tilesets/TileSet4.png");
+		tileMap.loadTiles("/Resources/Tilesets/TileSet4.png");
 		tileMap.setPosition(0, 0);
 		
-		bg = new Background("/Backgrounds/grassbg1.gif", 0.5);
+		bg = new Background("/Resources/Backgrounds/grassbg1.gif", 0.5);
 		
 		player = new Player(tileMap);	
 		player.setPosition(50, 100);
@@ -98,9 +98,9 @@ public class Level1AState extends GameState {
 		hud = new HUD(player);
 		
 		// Loads in and plays the background music on loop
-		AudioPlayer.load("/Music/Lost Island Looping.mp3", "lvl1Music");
+		AudioPlayer.load("/Resources/Music/Lost Island Looping.mp3", "lvl1Music");
 		AudioPlayer.loop("lvl1Music", AudioPlayer.getFrames("lvl1Music"));
-		AudioPlayer.load("/SFX/levelStart.mp3", "levelStart");
+		AudioPlayer.load("/Resources/SFX/levelStart.mp3", "levelStart");
 
 		// Start event
 		// Starts the transition for the first level
@@ -123,7 +123,7 @@ public class Level1AState extends GameState {
 		// Doors
 		GrassyStoneDoor gd;
 		
-		tileMap.loadMap("/Maps/Level1A/" + currentRoom + ".map");
+		tileMap.loadMap("/Resources/Maps/Level1A/" + currentRoom + ".map");
 		
 		// Each room is labelled depending on its position from the top left point of the whole level
 		switch(currentRoom) {

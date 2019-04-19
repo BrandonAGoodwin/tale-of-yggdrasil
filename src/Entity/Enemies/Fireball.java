@@ -36,7 +36,7 @@ public class Fireball extends EnemyProjectile {
 		// Load sprites
 		try{
 			
-			BufferedImage spritesheet = ImageIO.read(getClass().getResourceAsStream("/Sprites/Enemies/fireball.gif"));
+			BufferedImage spritesheet = ImageIO.read(getClass().getResourceAsStream("/Resources/Sprites/Enemies/fireball.gif"));
 				
 			sprites = new BufferedImage[4];
 			for(int i = 0; i < sprites.length; i++) {

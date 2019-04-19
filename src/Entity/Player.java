@@ -116,7 +116,7 @@ public class Player extends MapObject {
 		// Load sprites
 		try{
 			
-			BufferedImage spritesheet = ImageIO.read(getClass().getResourceAsStream("/Sprites/Player/PlayerSpritesV7.gif"));
+			BufferedImage spritesheet = ImageIO.read(getClass().getResourceAsStream("/Resources/Sprites/Player/PlayerSpritesV7.gif"));
 			
 			sprites = new ArrayList<BufferedImage[]>(); 
 			for(int i = 0; i < 15; i++){
@@ -137,11 +137,11 @@ public class Player extends MapObject {
 		animation.setDelay(10);
 		
 		// Loading in all the player sound effects
-		AudioPlayer.load("/SFX/YouDied(FadeOut).mp3", "playerDeath");
-		AudioPlayer.load("/SFX/Grunt1.mp3", "grunt1");
-		AudioPlayer.load("/SFX/Grunt2.mp3", "grunt2");
-		AudioPlayer.load("/SFX/Grunt3.mp3", "grunt3");
-		AudioPlayer.load("/SFX/scratch.mp3", "shoot");
+		AudioPlayer.load("/Resources/SFX/YouDied(FadeOut).mp3", "playerDeath");
+		AudioPlayer.load("/Resources/SFX/Grunt1.mp3", "grunt1");
+		AudioPlayer.load("/Resources/SFX/Grunt2.mp3", "grunt2");
+		AudioPlayer.load("/Resources/SFX/Grunt3.mp3", "grunt3");
+		AudioPlayer.load("/Resources/SFX/scratch.mp3", "shoot");
 		
 	}
 

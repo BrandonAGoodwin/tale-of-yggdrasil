@@ -58,7 +58,7 @@ public class RedImp extends Enemy {
 		// load sprites
 		try{
 			
-			BufferedImage spritesheet = ImageIO.read(getClass().getResourceAsStream("/Sprites/Enemies/RedImpSprites1.gif"));
+			BufferedImage spritesheet = ImageIO.read(getClass().getResourceAsStream("/Resources/Sprites/Enemies/RedImpSprites1.gif"));
 			
 			sprites = new ArrayList<BufferedImage[]>(); 
 			for(int i = 0; i < 3; i++){

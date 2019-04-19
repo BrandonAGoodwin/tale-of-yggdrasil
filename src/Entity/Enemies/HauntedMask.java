@@ -76,7 +76,7 @@ public class HauntedMask extends Enemy {
 			
 			BufferedImage spritesheet = ImageIO.read(
 					getClass().getResourceAsStream(
-						"/Sprites/Enemies/HauntedMaskSprites0.gif"
+						"Resources/Sprites/Enemies/HauntedMaskSprites0.gif"
 					)
 				);
 				

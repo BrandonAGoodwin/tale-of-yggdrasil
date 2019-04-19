@@ -81,7 +81,7 @@ public class PossessedArmourBoss extends Enemy {
 			
 			BufferedImage spritesheet = ImageIO.read(
 				getClass().getResourceAsStream(
-					"/Sprites/Enemies/PossessedArmor2Sprites3.gif"
+					"Resources/Sprites/Enemies/PossessedArmor2Sprites3.gif"
 				)
 			);
 				

@@ -66,13 +66,13 @@ public class GrassyStoneDoor extends Door {
 			BufferedImage spritesheet = null;
 			
 			if(direction == "right" || direction == "left") {
-				spritesheet = ImageIO.read(getClass().getResourceAsStream("/Sprites/Doors/Double Doors Animation Horizontal.gif"));
+				spritesheet = ImageIO.read(getClass().getResourceAsStream("/Resources/Sprites/Doors/Double Doors Animation Horizontal.gif"));
 			}
 			else if(direction == "up") {
-				spritesheet = ImageIO.read(getClass().getResourceAsStream("/Sprites/Doors/Double Doors Animation Up.gif"));
+				spritesheet = ImageIO.read(getClass().getResourceAsStream("/Resources/Sprites/Doors/Double Doors Animation Up.gif"));
 			}
 			else if(direction == "down") {
-				spritesheet = ImageIO.read(getClass().getResourceAsStream("/Sprites/Doors/Double Doors Animation Down.gif"));
+				spritesheet = ImageIO.read(getClass().getResourceAsStream("/Resources/Sprites/Doors/Double Doors Animation Down.gif"));
 			}
 				
 			sprites = new ArrayList<BufferedImage[]>(); 

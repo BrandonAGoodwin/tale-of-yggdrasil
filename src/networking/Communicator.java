@@ -6,7 +6,7 @@ package networking;
 public class Communicator {
 
   /** Variables */
-  private CopyOnWriteArrayList<BasicObject> objects;
+//  private CopyOnWriteArrayList<BasicObject> objects;
 
   private int bottomHealthPercentage;
   private int topHealthPercentage;
@@ -29,13 +29,13 @@ public class Communicator {
   private int scoreTop;
 
   private boolean picker;
-  private PlayerType playerType;
-  private Disease playerDisease;
-  private Disease opponentDisease;
-
-  private ArrayList<Organ> playerOrgans;
-  private ArrayList<Organ> opponentOrgans;
-  private Organ currentOrgan;
+//  private PlayerType playerType;
+//  private Disease playerDisease;
+//  private Disease opponentDisease;
+//
+//  private ArrayList<Organ> playerOrgans;
+//  private ArrayList<Organ> opponentOrgans;
+//  private Organ currentOrgan;
 
   private boolean startBodyScreen;
   private boolean startEncounter;
@@ -47,19 +47,11 @@ public class Communicator {
    * Instantiates a new Communicator.
    */
   public Communicator() {
-    objects = new CopyOnWriteArrayList<BasicObject>();
-    playerDisease = null;
-    opponentDisease = null;
-    playerOrgans = new ArrayList<Organ>();
-    opponentOrgans = new ArrayList<Organ>();
-    startBodyScreen = false;
-    startEncounter = false;
-    heartSelected = false;
-    eyeSelected = false;
-    brainSelected = false;
-    teethSelected = false;
-    intestinesSelected = false;
-    lungsSelected = false;
+//    objects = new CopyOnWriteArrayList<BasicObject>();
+//    playerDisease = null;
+//    opponentDisease = null;
+//    playerOrgans = new ArrayList<Organ>();
+//    opponentOrgans = new ArrayList<Organ>();
   }
 
   /**
@@ -67,18 +59,18 @@ public class Communicator {
    *
    * @return the all objects
    */
-  public CopyOnWriteArrayList<BasicObject> getAllObjects() {
-    return objects;
-  }
+//  public CopyOnWriteArrayList<BasicObject> getAllObjects() {
+//    return objects;
+//  }
 
   /**
    * Populate object list.
    *
    * @param os the os
    */
-  public void populateObjectList(CopyOnWriteArrayList<BasicObject> os) {
-    this.objects = os;
-  }
+//  public void populateObjectList(CopyOnWriteArrayList<BasicObject> os) {
+//    this.objects = os;
+//  }
 
   /**
    * Sets bottom health percentage.
@@ -104,36 +96,36 @@ public class Communicator {
    *
    * @return the player type
    */
-  public PlayerType getPlayerType() {
-    return playerType;
-  }
+//  public PlayerType getPlayerType() {
+//    return playerType;
+//  }
 
   /**
    * Sets player type.
    *
    * @param playerType the player type
    */
-  public void setPlayerType(PlayerType playerType) {
-    this.playerType = playerType;
-  }
+//  public void setPlayerType(PlayerType playerType) {
+//    this.playerType = playerType;
+//  }
 
   /**
    * Gets opponent disease.
    *
    * @return the opponent disease
    */
-  public Disease getOpponentDisease() {
-    return opponentDisease;
-  }
+//  public Disease getOpponentDisease() {
+//    return opponentDisease;
+//  }
 
   /**
    * Sets opponent disease.
    *
    * @param opponentDisease the opponent disease
    */
-  public void setOpponentDisease(Disease opponentDisease) {
-    this.opponentDisease = opponentDisease;
-  }
+//  public void setOpponentDisease(Disease opponentDisease) {
+//    this.opponentDisease = opponentDisease;
+//  }
 
   /**
    * Is picker boolean.
@@ -194,36 +186,36 @@ public class Communicator {
    *
    * @return the player organs
    */
-  public ArrayList<Organ> getPlayerOrgans() {
-    return playerOrgans;
-  }
+//  public ArrayList<Organ> getPlayerOrgans() {
+//    return playerOrgans;
+//  }
 
   /**
    * Sets player organs.
    *
    * @param playerOrgans the player organs
    */
-  public void setPlayerOrgans(ArrayList<Organ> playerOrgans) {
-    this.playerOrgans = playerOrgans;
-  }
+//  public void setPlayerOrgans(ArrayList<Organ> playerOrgans) {
+//    this.playerOrgans = playerOrgans;
+//  }
 
   /**
    * Gets opponent organs.
    *
    * @return the opponent organs
    */
-  public ArrayList<Organ> getOpponentOrgans() {
-    return opponentOrgans;
-  }
+//  public ArrayList<Organ> getOpponentOrgans() {
+//    return opponentOrgans;
+//  }
 
   /**
    * Sets opponent organs.
    *
    * @param opponentOrgans the opponent organs
    */
-  public void setOpponentOrgans(ArrayList<Organ> opponentOrgans) {
-    this.opponentOrgans = opponentOrgans;
-  }
+//  public void setOpponentOrgans(ArrayList<Organ> opponentOrgans) {
+//    this.opponentOrgans = opponentOrgans;
+//  }
 
   /**
    * Sets start body screen.
@@ -266,18 +258,18 @@ public class Communicator {
    *
    * @return the current organ
    */
-  public Organ getCurrentOrgan() {
-    return currentOrgan;
-  }
+//  public Organ getCurrentOrgan() {
+//    return currentOrgan;
+//  }
 
   /**
    * Sets current organ.
    *
    * @param currentOrgan the current organ
    */
-  public void setCurrentOrgan(Organ currentOrgan) {
-    this.currentOrgan = currentOrgan;
-  }
+//  public void setCurrentOrgan(Organ currentOrgan) {
+//    this.currentOrgan = currentOrgan;
+//  }
 
   /**
    * Gets resource.
@@ -286,27 +278,27 @@ public class Communicator {
    * @param playerType the player type
    * @return the resource
    */
-  public int getResource(Resource resource, PlayerType playerType) {
-    if (resource == Resource.SUGAR) {
-      if (playerType == PlayerType.PLAYER_BOTTOM) {
-        return sugarsBottom;
-      } else {
-        return sugarsTop;
-      }
-    } else if (resource == Resource.LIPID) {
-      if (playerType == PlayerType.PLAYER_BOTTOM) {
-        return lipidsBottom;
-      } else {
-        return lipidsTop;
-      }
-    } else {
-      if (playerType == PlayerType.PLAYER_BOTTOM) {
-        return proteinsBottom;
-      } else {
-        return proteinsTop;
-      }
-    }
-  }
+//  public int getResource(Resource resource, PlayerType playerType) {
+//    if (resource == Resource.SUGAR) {
+//      if (playerType == PlayerType.PLAYER_BOTTOM) {
+//        return sugarsBottom;
+//      } else {
+//        return sugarsTop;
+//      }
+//    } else if (resource == Resource.LIPID) {
+//      if (playerType == PlayerType.PLAYER_BOTTOM) {
+//        return lipidsBottom;
+//      } else {
+//        return lipidsTop;
+//      }
+//    } else {
+//      if (playerType == PlayerType.PLAYER_BOTTOM) {
+//        return proteinsBottom;
+//      } else {
+//        return proteinsTop;
+//      }
+//    }
+//  }
 
   /**
    * was eye selected boolean.
@@ -362,22 +354,22 @@ public class Communicator {
     return heartSelected;
   }
 
-  public void addOponentOrgan(Organ organ){
-    opponentOrgans.add(organ);
-  }
+//  public void addOponentOrgan(Organ organ){
+//    opponentOrgans.add(organ);
+//  }
 
-  public void addOrgan(Organ organ){
-    playerOrgans.add(organ);
-  }
+//  public void addOrgan(Organ organ){
+//    playerOrgans.add(organ);
+//  }
 
-  public void setUsername(PlayerType playerType, String username){
-    if(playerType == PlayerType.PLAYER_TOP){
-      usernameTop = username;
-    }
-    else if(playerType == PlayerType.PLAYER_BOTTOM){
-      usernameBottom = username;
-    }
-  }
+//  public void setUsername(PlayerType playerType, String username){
+//    if(playerType == PlayerType.PLAYER_TOP){
+//      usernameTop = username;
+//    }
+//    else if(playerType == PlayerType.PLAYER_BOTTOM){
+//      usernameBottom = username;
+//    }
+//  }
 
   public String getUsernameBottom(){
     return usernameBottom;

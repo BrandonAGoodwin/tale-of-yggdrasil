@@ -27,7 +27,7 @@ public class Heart extends Item {
 		// Load Sprites
 		try{
 			
-			BufferedImage spritesheet = ImageIO.read(getClass().getResourceAsStream("/Sprites/Items/Heart.gif"));
+			BufferedImage spritesheet = ImageIO.read(getClass().getResourceAsStream("/Resources/Sprites/Items/Heart.gif"));
 			
 			sprites = new BufferedImage[1];
 			sprites[0] = spritesheet.getSubimage(0, 0, width, height);
@@ -36,7 +36,7 @@ public class Heart extends Item {
 			e.printStackTrace();
 		}
 		
-		AudioPlayer.load("/SFX/HealthUp.mp3", "Heart");
+		AudioPlayer.load("/Resources/SFX/HealthUp.mp3", "Heart");
 	
 		animation = new Animation();
 		animation.setFrames(sprites);

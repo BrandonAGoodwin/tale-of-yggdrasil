@@ -29,7 +29,7 @@ public class HuntersHeaddress extends Item{
 		//load sprites
 		try{
 			
-			BufferedImage spritesheet = ImageIO.read(getClass().getResourceAsStream("/Sprites/Items/HuntersHeaddress.gif"));
+			BufferedImage spritesheet = ImageIO.read(getClass().getResourceAsStream("/Resources/Sprites/Items/HuntersHeaddress.gif"));
 			
 			sprites = new BufferedImage[1];
 			sprites[0] = spritesheet.getSubimage(0, 0, width, height);

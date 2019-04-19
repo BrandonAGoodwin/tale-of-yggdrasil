@@ -86,7 +86,7 @@ public class WrathfulMask extends Enemy {
 			
 			BufferedImage spritesheet = ImageIO.read(
 					getClass().getResourceAsStream(
-						"/Sprites/Enemies/WrathfulMaskSprites0.gif"
+						"Resources/Sprites/Enemies/WrathfulMaskSprites0.gif"
 					)
 				);
 				

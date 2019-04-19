@@ -20,10 +20,10 @@ public class HUD {
 	public HUD(Player p) {
 		player = p;
 		try {
-			container = ImageIO.read(getClass().getResourceAsStream("/HUD/Container.gif"));
-			containerEnd = ImageIO.read(getClass().getResourceAsStream("/HUD/ContainerEnd.gif"));
-			fullBar = ImageIO.read(getClass().getResourceAsStream("/HUD/FullBar.gif"));
-			halfBar = ImageIO.read(getClass().getResourceAsStream("/HUD/HalfBar.gif"));
+			container = ImageIO.read(getClass().getResourceAsStream("/Resources/HUD/Container.gif"));
+			containerEnd = ImageIO.read(getClass().getResourceAsStream("/Resources/HUD/ContainerEnd.gif"));
+			fullBar = ImageIO.read(getClass().getResourceAsStream("/Resources/HUD/FullBar.gif"));
+			halfBar = ImageIO.read(getClass().getResourceAsStream("/Resources/HUD/HalfBar.gif"));
 			//font = new Font("Arial", Font.PLAIN, 14);
 		}
 		catch(Exception e) {

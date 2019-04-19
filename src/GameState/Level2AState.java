@@ -66,13 +66,13 @@ public class Level2AState extends GameState {
 	public void init() {
 
 		tileMap = new TileMap(32);
-		tileMap.loadTiles("/Tilesets/SandyTileset2.png");
-		tileMap.loadMap("/Maps/Level2A/2-7.map");
+		tileMap.loadTiles("/Resources/Tilesets/SandyTileset2.png");
+		tileMap.loadMap("/Resources/Maps/Level2A/2-7.map");
 		tileMap.setPosition(0, 0);
 		
-		bg = new Background("/Backgrounds/grassbg1.gif", 0.5);
+		bg = new Background("/Resources/Backgrounds/grassbg1.gif", 0.5);
 		
-		emblem = new Emblem("/Transitions/Level2ATransition.gif", 256);
+		emblem = new Emblem("/Resources/Transitions/Level2ATransition.gif", 256);
 		emblem.setPosition((GamePanel.WIDTH / 2) - (emblem.width / 2), (GamePanel.HEIGHT / 2) - (emblem.height / 2));
 		
 		player = PlayerSave.importPlayer(tileMap);
@@ -91,9 +91,9 @@ public class Level2AState extends GameState {
 		
 		hud = new HUD(player);
 		
-		AudioPlayer.load("/Music/Lost Island Looping.mp3", "lvl1Music");	
-		AudioPlayer.load("/SFX/levelStart.mp3", "levelStart");
-		AudioPlayer.load("/SFX/HealthShrine.mp3", "healthShrine");
+		AudioPlayer.load("/Resources/Music/Lost Island Looping.mp3", "lvl1Music");
+		AudioPlayer.load("/Resources/SFX/levelStart.mp3", "levelStart");
+		AudioPlayer.load("/Resources/SFX/HealthShrine.mp3", "healthShrine");
 		
 		// Start event
 		eventStart = true;
@@ -140,7 +140,7 @@ public class Level2AState extends GameState {
 		pa.setPosition(200, 50);
 		enemies.add(pa);*/
 		
-		tileMap.loadMap("/Maps/Level2A/" + currentRoom + ".map");
+		tileMap.loadMap("/Resources/Maps/Level2A/" + currentRoom + ".map");
 		
 		switch(currentRoom) {
 		

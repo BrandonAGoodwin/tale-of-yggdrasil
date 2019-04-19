@@ -14,7 +14,7 @@ import Handlers.Keys;
 import GameState.GameStateManager;
 
 @SuppressWarnings("serial")
-public class GamePanel extends JPanel implements Runnable, KeyListener {
+public class GamePanel extends JPanel implements java.lang.Runnable, KeyListener {
 	
 	// Dimensions
 	public static GraphicsDevice gd = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice();

@@ -57,14 +57,14 @@ public class Client {
     }
   }
 
-  public void setEncounterLogic() {
-    clientLogic.setEncounterLogic();
-  }
-
-
-    public void setUsername(String textUsername) {
-      this.username = username;
-    }
+//  public void setEncounterLogic() {
+//    clientLogic.setEncounterLogic();
+//  }
+//
+//
+//    public void setUsername(String textUsername) {
+//      this.username = username;
+//    }
 
     //  public static void main(String argv[]) throws Exception {
   //    ClientReceiver clientReceiver = new ClientReceiver();

@@ -36,7 +36,7 @@ public class SluggerFast extends Enemy {
 		// Load sprites
 		try{
 			
-			BufferedImage spritesheet = ImageIO.read(getClass().getResourceAsStream("/Sprites/Enemies/SluggerFast.gif"));
+			BufferedImage spritesheet = ImageIO.read(getClass().getResourceAsStream("/Resources/Sprites/Enemies/SluggerFast.gif"));
 			
 			sprites = new BufferedImage[3];
 			for(int i = 0; i < sprites.length; i++){

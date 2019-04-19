@@ -1,8 +1,6 @@
 package networking;
 
-import main.com.bodyconquest.constants.GameType;
-import main.com.bodyconquest.game_logic.Game;
-import main.com.bodyconquest.gamestates.EncounterState;
+import networking.constants.GameType;
 
 import java.net.SocketException;
 
@@ -39,9 +37,9 @@ public class Server {
     return serverSender;
   }
 
-  public void startEncounterLogic(EncounterState encounterState) {
-    serverLogic.setEncounterLogic(encounterState);
-  }
+//  public void startEncounterLogic(EncounterState encounterState) {
+//    serverLogic.setEncounterLogic(encounterState);
+//  }
 
   public static void main(String args[]) throws Exception {
     Ping ping = new Ping();
@@ -70,10 +68,10 @@ public class Server {
     return gameEnded;
   }
 
-  public void startRaceSelectionLogic(Game game) {
-    serverLogic.setRaceSelectionLogic(game);
-  }
+//  public void startRaceSelectionLogic(Game game) {
+//    serverLogic.setRaceSelectionLogic(game);
+//  }
 
-  public void startBodyLogic() { serverLogic.setBodyLogic(); }
+  //public void startBodyLogic() { serverLogic.setBodyLogic(); }
 
 }

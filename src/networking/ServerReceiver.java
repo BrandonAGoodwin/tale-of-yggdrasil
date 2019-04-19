@@ -1,6 +1,6 @@
 package networking;
 
-import main.com.bodyconquest.constants.GameType;
+import networking.constants.GameType;
 
 import java.io.IOException;
 import java.net.DatagramPacket;

@@ -73,7 +73,7 @@ public class AngryMask extends Enemy {
 			
 			BufferedImage spritesheet = ImageIO.read(
 					getClass().getResourceAsStream(
-						"/Sprites/Enemies/AngryMaskSprites0.gif"
+						"Resources/Sprites/Enemies/AngryMaskSprites0.gif"
 					)
 				);
 				

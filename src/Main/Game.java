@@ -14,7 +14,7 @@ public class Game {
 		window.setVisible(true);
 		
 		try {
-			URL Icon = ClassLoader.getSystemResource("Sprites/Misc/TOY Icon.png");
+			URL Icon = ClassLoader.getSystemResource("/Resources/Sprites/Misc/TOY Icon.png");
 			Toolkit kit = Toolkit.getDefaultToolkit();
 			Image img = kit.createImage(Icon);
 			window.setIconImage(img);

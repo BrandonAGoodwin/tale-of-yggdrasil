@@ -66,13 +66,13 @@ public class Level1BState extends GameState {
 	public void init() {
 
 		tileMap = new TileMap(32);
-		tileMap.loadTiles("/Tilesets/TileSet4.png");
-		tileMap.loadMap("/Maps/Level1B/1-0.map");
+		tileMap.loadTiles("/Resources/Tilesets/TileSet4.png");
+		tileMap.loadMap("/Resources/Maps/Level1B/1-0.map");
 		tileMap.setPosition(0, 0);
 		
-		bg = new Background("/Backgrounds/grassbg1.gif", 0.5);
+		bg = new Background("/Resources/Backgrounds/grassbg1.gif", 0.5);
 		
-		emblem = new Emblem("/Transitions/Level1BTransition.gif", 256);
+		emblem = new Emblem("/Resources/Transitions/Level1BTransition.gif", 256);
 		emblem.setPosition((GamePanel.WIDTH / 2) - (emblem.width / 2), (GamePanel.HEIGHT / 2) - (emblem.height / 2));
 		
 		player = PlayerSave.importPlayer(tileMap);
@@ -91,9 +91,9 @@ public class Level1BState extends GameState {
 		
 		hud = new HUD(player);
 		
-		AudioPlayer.load("/Music/Lost Island Looping.mp3", "lvl1Music");	
-		AudioPlayer.load("/SFX/levelStart.mp3", "levelStart");
-		AudioPlayer.load("/SFX/HealthShrine.mp3", "healthShrine");
+		AudioPlayer.load("/Resources/Music/Lost Island Looping.mp3", "lvl1Music");
+		AudioPlayer.load("/Resources/SFX/levelStart.mp3", "levelStart");
+		AudioPlayer.load("/Resources/SFX/HealthShrine.mp3", "healthShrine");
 		
 		// Start event
 		eventStart = true;
@@ -130,7 +130,7 @@ public class Level1BState extends GameState {
 			
 				///////////////////////Map///////////////////////////
 				
-				tileMap.loadMap("/Maps/Level1B/" + currentRoom + ".map");
+				tileMap.loadMap("/Resources/Maps/Level1B/" + currentRoom + ".map");
 				
 				if(!b10) {
 
@@ -149,7 +149,7 @@ public class Level1BState extends GameState {
 				
 				///////////////////////Map///////////////////////////
 				
-				tileMap.loadMap("/Maps/Level1B/" + currentRoom + ".map");
+				tileMap.loadMap("/Resources/Maps/Level1B/" + currentRoom + ".map");
 				
 				if(!b11) {
 					///////////////////////Enemies///////////////////////
@@ -184,7 +184,7 @@ public class Level1BState extends GameState {
 				
 				///////////////////////Map///////////////////////////
 				
-				tileMap.loadMap("/Maps/Level1B/" + currentRoom + ".map");
+				tileMap.loadMap("/Resources/Maps/Level1B/" + currentRoom + ".map");
 				
 				if(!b01) {
 					///////////////////////Enemies///////////////////////
@@ -221,7 +221,7 @@ public class Level1BState extends GameState {
 				
 				///////////////////////Map///////////////////////////
 				
-				tileMap.loadMap("/Maps/Level1B/" + currentRoom + ".map");
+				tileMap.loadMap("/Resources/Maps/Level1B/" + currentRoom + ".map");
 				
 				if(!b02) {
 					///////////////////////Enemies///////////////////////
@@ -250,7 +250,7 @@ public class Level1BState extends GameState {
 				
 				///////////////////////Map///////////////////////////
 				
-				tileMap.loadMap("/Maps/Level1B/" + currentRoom + ".map");
+				tileMap.loadMap("/Resources/Maps/Level1B/" + currentRoom + ".map");
 				
 				if(!b12) {
 					///////////////////////Enemies///////////////////////
@@ -290,7 +290,7 @@ public class Level1BState extends GameState {
 				
 				///////////////////////Map///////////////////////////
 				
-				tileMap.loadMap("/Maps/Level1B/" + currentRoom + ".map");
+				tileMap.loadMap("/Resources/Maps/Level1B/" + currentRoom + ".map");
 				
 				if(!b22) { b22 = true; }
 				///////////////////////Doors/////////////////////////
@@ -318,7 +318,7 @@ public class Level1BState extends GameState {
 				
 				///////////////////////Map///////////////////////////
 				
-				tileMap.loadMap("/Maps/Level1B/" + currentRoom + ".map");
+				tileMap.loadMap("/Resources/Maps/Level1B/" + currentRoom + ".map");
 				
 				if(!b21) { b21 = true; }
 				
@@ -342,7 +342,7 @@ public class Level1BState extends GameState {
 				
 				///////////////////////Map///////////////////////////
 				
-				tileMap.loadMap("/Maps/Level1B/" + currentRoom + ".map");
+				tileMap.loadMap("/Resources/Maps/Level1B/" + currentRoom + ".map");
 				
 				if(!b23) {
 					///////////////////////Enemies///////////////////////
@@ -390,7 +390,7 @@ public class Level1BState extends GameState {
 				
 				///////////////////////Map///////////////////////////
 				
-				tileMap.loadMap("/Maps/Level1B/" + currentRoom + ".map");
+				tileMap.loadMap("/Resources/Maps/Level1B/" + currentRoom + ".map");
 				
 				if(!b24) {
 					///////////////////////Enemies///////////////////////
@@ -419,7 +419,7 @@ public class Level1BState extends GameState {
 				
 				///////////////////////Map///////////////////////////
 				
-				tileMap.loadMap("/Maps/Level1B/" + currentRoom + ".map");
+				tileMap.loadMap("/Resources/Maps/Level1B/" + currentRoom + ".map");
 				
 				if(!b34) {
 					///////////////////////Enemies///////////////////////
@@ -458,7 +458,7 @@ public class Level1BState extends GameState {
 				
 				///////////////////////Map///////////////////////////
 				
-				tileMap.loadMap("/Maps/Level1B/" + currentRoom + ".map");
+				tileMap.loadMap("/Resources/Maps/Level1B/" + currentRoom + ".map");
 				
 				if(!b44) {
 					///////////////////////Items/////////////////////////
@@ -483,7 +483,7 @@ public class Level1BState extends GameState {
 				
 				///////////////////////Map///////////////////////////
 				
-				tileMap.loadMap("/Maps/Level1B/" + currentRoom + ".map");
+				tileMap.loadMap("/Resources/Maps/Level1B/" + currentRoom + ".map");
 				
 				if(!b32) {
 					///////////////////////Enemies///////////////////////
@@ -516,7 +516,7 @@ public class Level1BState extends GameState {
 				
 				///////////////////////Map///////////////////////////
 				
-				tileMap.loadMap("/Maps/Level1B/" + currentRoom + ".map");
+				tileMap.loadMap("/Resources/Maps/Level1B/" + currentRoom + ".map");
 				
 				if(!b42) {
 					///////////////////////Enemies///////////////////////

@@ -46,7 +46,7 @@ public class Stinger extends Enemy {
 		// Load sprites
 		try{
 			
-			BufferedImage spritesheet = ImageIO.read(getClass().getResourceAsStream("/Sprites/Enemies/Bug.gif"));
+			BufferedImage spritesheet = ImageIO.read(getClass().getResourceAsStream("/Resources/Sprites/Enemies/Bug.gif"));
 			
 			sprites = new BufferedImage[4];
 			for(int i = 0; i < sprites.length; i++){

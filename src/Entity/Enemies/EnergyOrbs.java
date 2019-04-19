@@ -40,7 +40,7 @@ public class EnergyOrbs extends EnemyProjectile {
 		// Load sprites
 		try{
 			
-			BufferedImage spritesheet = ImageIO.read(getClass().getResourceAsStream("/Sprites/Enemies/EnergyOrbs0.gif"));
+			BufferedImage spritesheet = ImageIO.read(getClass().getResourceAsStream("/Resources/Sprites/Enemies/EnergyOrbs0.gif"));
 				
 			sprites = new BufferedImage[8];
 			for(int i = 0; i < sprites.length; i++) {

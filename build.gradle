@@ -1,0 +1,38 @@
+repositories {
+    mavenCentral()
+}
+
+apply plugin: 'idea'
+apply plugin: 'java'
+
+dependencies {
+    // https://mvnrepository.com/artifact/com.googlecode.soundlibs/jlayer
+    compile group: 'com.googlecode.soundlibs', name: 'jlayer', version: '1.0.1.4'
+    // https://mvnrepository.com/artifact/com.googlecode.soundlibs/mp3spi
+    compile group: 'com.googlecode.soundlibs', name: 'mp3spi', version: '1.9.5.4'
+    // https://mvnrepository.com/artifact/com.googlecode.soundlibs/tritonus-share
+    compile group: 'com.googlecode.soundlibs', name: 'tritonus-share', version: '0.3.7.4'
+
+}
+
+sourceSets {
+    main.java.srcDir "src"
+    main.resources.srcDir "src"
+    test.java.srcDir "src/test"
+}
+
+jar {
+    from configurations.compile.collect { zipTree it }
+    manifest.attributes "Main-Class": "Main.Game"
+}
+
+task runJar(type: Exec, dependsOn:  jar) {
+    executable 'java'
+    args '-jar', "$jar.archivePath"
+}
+
+task run(type: JavaExec, dependsOn: classes) {
+    main 'Main.Game'
+    classpath sourceSets.main.runtimeClasspath
+}
+

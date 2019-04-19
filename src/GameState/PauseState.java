@@ -31,7 +31,7 @@ public class PauseState extends GameState {
 		helpVisible = false;
 		
 		try {
-			helpScreen = ImageIO.read(getClass().getResourceAsStream("/Backgrounds/HelpScreen.gif"));
+			helpScreen = ImageIO.read(getClass().getResourceAsStream("/Resources/Backgrounds/HelpScreen.gif"));
 			font = new Font ("Century Gothic", Font.PLAIN, 18);
 			menuFont = new Font("Century Gothic", Font.PLAIN, 14);
 		} catch(Exception e) {

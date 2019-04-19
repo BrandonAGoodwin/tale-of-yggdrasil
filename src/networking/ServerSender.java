@@ -1,6 +1,6 @@
 package networking;
 
-import main.com.bodyconquest.networking.utilities.MessageMaker;
+import networking.utilities.MessageMaker;
 
 import java.io.IOException;
 import java.net.DatagramPacket;

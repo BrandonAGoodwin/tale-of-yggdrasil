@@ -86,7 +86,7 @@ public class VengefulMask extends Enemy {
 			
 			BufferedImage spritesheet = ImageIO.read(
 					getClass().getResourceAsStream(
-						"/Sprites/Enemies/VengefulMaskSprites0.gif"
+						"Resources/Sprites/Enemies/VengefulMaskSprites0.gif"
 					)
 				);
 				

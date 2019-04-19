@@ -114,7 +114,7 @@ public class Shot extends MapObject{
 		
 		// Load Sprites
 		try{
-			BufferedImage spritesheet1 = ImageIO.read(getClass().getResourceAsStream("/Sprites/Player/shotSprites.gif"));
+			BufferedImage spritesheet1 = ImageIO.read(getClass().getResourceAsStream("/Resources/Sprites/Player/shotSprites.gif"));
 			
 			sprites = new ArrayList<BufferedImage[]>(); 
 			for(int i = 0; i < 4; i++){
@@ -127,7 +127,7 @@ public class Shot extends MapObject{
 				
 			}
 			
-			BufferedImage spritesheet2 = ImageIO.read(getClass().getResourceAsStream("/Sprites/Player/fireball.gif"));
+			BufferedImage spritesheet2 = ImageIO.read(getClass().getResourceAsStream("/Resources/Sprites/Player/fireball.gif"));
 			
 			hitSprites = new BufferedImage[3];
 			for(int i = 0; i < hitSprites.length; i++){
@@ -136,7 +136,7 @@ public class Shot extends MapObject{
 			
 			animationSpeedShot = new Animation();
 			if(speedShot) {
-				BufferedImage spritesheet3 = ImageIO.read(getClass().getResourceAsStream("/Sprites/Player/speedShot.gif"));
+				BufferedImage spritesheet3 = ImageIO.read(getClass().getResourceAsStream("/Resources/Sprites/Player/speedShot.gif"));
 				
 				speedShotSprites = new ArrayList<BufferedImage[]>(); 
 				for(int i = 0; i < 4; i++){
